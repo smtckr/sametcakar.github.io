@@ -1,0 +1,6 @@
+{
+  "name": "Cesur Akgün Travel Agency",
+  "description": "A modern travel agency website showcasing tours, destinations, hotels, and a blog.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

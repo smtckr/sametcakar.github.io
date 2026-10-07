@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  img, svg {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+  }
+}
+
+@keyframes border-beam {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-border-beam {
+  animation: border-beam 4s linear infinite;
+}
+
+.animate-border-beam-fast {
+  animation: border-beam 2.5s linear infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    opacity: 0.65;
+    filter: blur(8px);
+  }
+  50% {
+    opacity: 0.95;
+    filter: blur(14px);
+  }
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
